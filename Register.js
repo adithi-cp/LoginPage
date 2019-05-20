@@ -63,7 +63,7 @@ class Register extends Component {
                 debugger;
             if(response.data.message === "OTP verified successfully."){
                 this.setState({
-                                transactionId: transationId,
+                                transactionId: response.data.transation_id,
                                 showOtp: false,
                                 showRegister: true})
                     }
